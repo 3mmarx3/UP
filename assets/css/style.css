@@ -1540,12 +1540,6 @@ h4 {
 
 /* -------------------------navbar end-------------------------- */
 
-.right-main {
-  padding: 30px 50px;
-  position: relative;
-  width: 100%;
-}
-
 /* -------------------------main-------------------------- */
 
 main {
@@ -1969,6 +1963,12 @@ body {
 @media screen and (max-width: 767px) {
   ._game_section.container {
     grid-template-columns: 1fr 1fr !important;
+  }
+  ._header {
+    display: block;
+  }
+  .spiderman-img {
+    display: none;
   }
 }
 
