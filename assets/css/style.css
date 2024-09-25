@@ -1049,13 +1049,12 @@ html.darkmod #logowhite {
 }
 
 .logo {
-  width: 200px;
-  height: 100px;
-  background-color: white;
+  width: 120px;
+  height: 60px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url(../images/up.png);
+  background-image: url(../images/logo.PNG);
 }
 
 .logo > a {
@@ -2050,9 +2049,10 @@ a.lang > span {
 }
 
 .carousel-apps .item {
-  max-width: 13.75rem;
-  padding: 2rem 0;
-  padding-right: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  margin: 5vh 0;
 }
 
 .card-list {
@@ -2112,7 +2112,7 @@ a.lang > span {
   display: none;
 }
 
-.card-list .item_app.mod .img::before,
+/* .card-list .item_app.mod .img::before,
 .carousel-apps .item_app.mod .img::before {
   content: "MOD";
   position: absolute;
@@ -2122,7 +2122,7 @@ a.lang > span {
   background-color: rgba(0, 0, 0, 0.2);
   color: #fff;
   border-radius: 0.75rem;
-}
+} */
 
 .card-list .item_app .name,
 .carousel-apps .item_app .name {
@@ -2358,12 +2358,6 @@ a.lang > span {
 .flickity-viewport {
   overflow: hidden;
   position: relative;
-  height: 100%;
-}
-
-.flickity-slider {
-  position: absolute;
-  width: 100%;
   height: 100%;
 }
 
@@ -3567,16 +3561,6 @@ a.lang > span {
   overflow: hidden;
   line-height: 1.4em;
   max-height: 2.8em;
-}
-
-.item_app .name > a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  z-index: 2;
 }
 
 .item_app .meta {
@@ -6030,7 +6014,6 @@ html.darkmod body {
 html.darkmod .header > header {
   background-color: #292c2f;
   color: #fff;
-  overflow: hidden;
 }
 
 html.darkmod .header::after {
@@ -7056,4 +7039,40 @@ a.comment-reply-link {
 
 .flickity-viewport.is-selected {
   position: relative !important;
+}
+
+.item_app.mod {
+  border-radius: 10px;
+}
+
+.hi {
+  height: auto !important;
+}
+
+@media screen and (max-width: 1200px) {
+  .carousel-apps .item {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .carousel-apps .item {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .carousel-apps .item {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .carousel-apps .item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
