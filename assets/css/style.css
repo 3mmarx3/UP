@@ -2160,7 +2160,7 @@ a.lang > span {
 }
 
 @media (min-width: 992px) {
-  .carousel-apps-out::after {
+  /* .carousel-apps-out::after {
     content: "";
     position: absolute;
     top: 0;
@@ -2169,7 +2169,7 @@ a.lang > span {
     margin-right: -1.5rem;
     width: 1.5rem;
     background-image: linear-gradient(-90deg, #fbfbfa 0, #fbfbfa00 100%);
-  }
+  } */
 
   .card-list .item_app:hover,
   .carousel-apps .item_app:hover {
@@ -7048,7 +7048,8 @@ a.comment-reply-link {
 }
 
 body {
-  overflow-x: hidden;
+  overflow-x: hidden !important;
+  background: red !important;
 }
 
 @media screen and (max-width: 1200px) {
