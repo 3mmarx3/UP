@@ -1897,38 +1897,5 @@
       </defs>
     </svg>
 
-    <script>
-      $(document).ready(function () {
-        $("html").removeClass("load");
-      });
-      $("#navcollapse_btn").click(function () {
-        $("#navcollapse").toggleClass("open");
-        return false;
-      });
-      $(".head_menu_btn, .hmenu_close").on("click", function () {
-        $(".hmenu").toggleClass("open").removeClass("sm");
-        $(".submenu").removeClass("open");
-        setTimeout(function () {
-          $("html").toggleClass("hm");
-        }, 50);
-        return false;
-      });
-      $(".toggle_submenu").on("click", function () {
-        $(".hmenu").toggleClass("sm");
-        $(this).parent(".submenu").toggleClass("open");
-        return false;
-      });
-      $("#qsearch_btn, .qsearch_close").on("click", function () {
-        $("#qsearch_modal").toggleClass("open");
-        setTimeout(function () {
-          $("html").toggleClass("qs");
-        }, 50);
-        return false;
-      });
-      $(".app-panel-close").on("click", function () {
-        $("html").removeClass("ap-open");
-        return false;
-      });
-    </script>
   </body>
 </html>
