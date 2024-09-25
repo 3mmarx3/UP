@@ -2036,8 +2036,6 @@ a.lang > span {
 }
 
 .carousel-apps {
-  margin: -2rem 0;
-  margin-right: -1.5rem;
   white-space: nowrap;
 }
 
@@ -7047,6 +7045,10 @@ a.comment-reply-link {
 
 .hi {
   height: auto !important;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 @media screen and (max-width: 1200px) {
